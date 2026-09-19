@@ -1,0 +1,3 @@
+# Participant manual assets
+
+The four PNG screenshots document the live Noise Report form. Equal-height frames preserve the page grid; select a screenshot to open the full image. Section 04 displays prototype-preview.png and links to the reporting form. Section 06 renders Leaflet 1.9.4 with OpenStreetMap tiles and fetches the public published survey 2 API without credentials. Data reloads every minute while the page is visible and on return to the tab. The count includes only published records with numeric coordinates within the broad Singapore region (latitude 1.15–1.50, longitude 103.60–104.15); this is not an exact border test. Invalid locations are skipped with a console warning. API failures display the external-map link. No observations are stored locally.
