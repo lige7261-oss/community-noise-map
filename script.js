@@ -135,7 +135,7 @@ if ('IntersectionObserver' in window) {
         });
       }
       count.textContent = `${String(valid.length).padStart(2, '0')} REPORTS / LIVE MAP`;
-      update.textContent = `${posts.size} PUBLISHED / ${valid.length} MAPPED${skipped ? ` / ${skipped} OUTSIDE REGION OR INVALID` : ''}. REFRESHES EVERY MINUTE.`;
+      update.innerHTML = 'PUBLISHED SINGAPORE OBSERVATIONS.<br>REFRESHES AUTOMATICALLY EVERY MINUTE.';
       status.hidden = valid.length > 0;
       if (!valid.length) status.querySelector('p').textContent = 'No published Singapore observations to display yet.';
     } catch (error) {
